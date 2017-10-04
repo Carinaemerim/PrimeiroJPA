@@ -25,7 +25,8 @@ public class UsuarioTest {
 		em.persist(usuario);
 		em.getTransaction().commit();
 
-		assertThat(usuario.getId()).isNull();
+		Usuario usr = em.find(Usuario.class, usuario.getId());
+		assertThat(usr.getEndereco()).isNull();
 	}
 
 	@Test
@@ -34,10 +35,9 @@ public class UsuarioTest {
 		Usuario usuario = new Usuario("email.do@usuario.com", "Senha_Do_Usuario", "Endereco do Usuario");
 
 		em.getTransaction().begin();
-		em.close();
 		em.persist(usuario);
 		em.getTransaction().commit();
-
+		em.close();
 
 		assertThat(usuario.getId()).isNotNull();
 		assertThat(usuario.getEndereco()).isEqualTo("Endereco do Usuario");
@@ -50,19 +50,19 @@ public class UsuarioTest {
 		Usuario usuarioRecuperado = em.find(Usuario.class, usuario.getId());
 		em.close();
 
-		assertThat(usuarioRecuperado.getId()).isNull();
-		assertThat(usuarioRecuperado.getEndereco()).isEqualTo("");
+		assertThat(usuarioRecuperado.getId()).isNotNull();
+		assertThat(usuarioRecuperado.getId()).isEqualTo(usuario.getId());
 	}
 
 	@Test
 	public void testa_a_exclusao_de_usuario() {
 		// construtor deve ter email, senha, endereco
 		Usuario usuario = this.criaUsuario();
-		em.close();
 		em.remove(usuario);
 		Usuario usuarioRecuperado = em.find(Usuario.class, usuario.getId());
-
-		assertThat(usuarioRecuperado).isNotNull();
+		em.close();
+		
+		assertThat(usuarioRecuperado).isNull();
 	}
 
 	@Test
@@ -74,7 +74,7 @@ public class UsuarioTest {
 		Usuario usuarioRecuperado = em.find(Usuario.class, usuario.getId());
 		em.close();
 
-		assertThat(usuarioRecuperado.getEmail()).isEqualTo("email.do@usuario.com");
+		assertThat(usuarioRecuperado.getEmail()).isEqualTo("email@atualizado.com");
 	}
 
 	@Test
@@ -102,7 +102,7 @@ public class UsuarioTest {
 		TypedQuery<Usuario> query = em.createQuery("SELECT usr FROM Usuario usr", Usuario.class);
 		List<Usuario> usuarios = query.getResultList();
 
-		assertThat(usuarios).size().isGreaterThan(30);
+		assertThat(usuarios).size().isLessThan(30);
 	}
 
 	@Test
@@ -113,7 +113,7 @@ public class UsuarioTest {
 		em.persist(usuario);
 		em.getTransaction().commit();
 
-		TypedQuery<Usuario> query = em.createQuery("SELECT usr FROM Usuario usr where usr.nome = :nome", Usuario.class);
+		TypedQuery<Usuario> query = em.createQuery("SELECT usr FROM Usuario usr where usr.email = :email", Usuario.class);
 		query.setParameter("email", usuario.getEmail());
 		List <Usuario> usuarios = query.getResultList();
 

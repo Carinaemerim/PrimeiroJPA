@@ -1,7 +1,4 @@
-/*C1*/SET SCHEMA SYSTEM_LOBS
-INSERT INTO BLOCKS VALUES(0,2147483647,0)
-COMMIT
-/*C3*/SET SCHEMA PUBLIC
+/*C4*/SET SCHEMA PUBLIC
 \u000d\u000a    drop table Usuario if exists
 \u000d\u000a    drop sequence hibernate_sequence if exists
 create sequence hibernate_sequence start with 1 increment by 1
@@ -9,7 +6,876 @@ create sequence hibernate_sequence start with 1 increment by 1
 INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
 ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
 COMMIT
-INSERT INTO USUARIO VALUES(2,NULL,NULL,NULL)
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
 ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C5*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C4*/DISCONNECT
+/*C5*/DISCONNECT
+/*C6*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C7*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C6*/DISCONNECT
+/*C7*/DISCONNECT
+/*C8*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C9*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C8*/DISCONNECT
+/*C9*/DISCONNECT
+/*C10*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C11*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+DISCONNECT
+/*C10*/DISCONNECT
+/*C12*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C13*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C12*/DISCONNECT
+/*C13*/DISCONNECT
+/*C14*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C15*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C14*/DISCONNECT
+/*C15*/DISCONNECT
+/*C16*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C17*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C16*/DISCONNECT
+/*C17*/DISCONNECT
+/*C18*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C19*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+DISCONNECT
+/*C18*/DISCONNECT
+/*C20*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C21*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C20*/DISCONNECT
+/*C21*/DISCONNECT
+/*C22*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C23*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C22*/DISCONNECT
+/*C23*/DISCONNECT
+/*C24*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C25*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+DISCONNECT
+/*C24*/DISCONNECT
+/*C26*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+/*C27*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+/*C26*/INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C27*/INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+/*C28*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+/*C29*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(8,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+INSERT INTO USUARIO VALUES(10,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 11
+COMMIT
+/*C28*/INSERT INTO USUARIO VALUES(11,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 12
+COMMIT
+INSERT INTO USUARIO VALUES(12,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 13
+COMMIT
+INSERT INTO USUARIO VALUES(13,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 14
+COMMIT
+INSERT INTO USUARIO VALUES(14,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 15
+COMMIT
+/*C26*/DISCONNECT
+/*C28*/DISCONNECT
+/*C29*/INSERT INTO USUARIO VALUES(15,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 16
+COMMIT
+INSERT INTO USUARIO VALUES(16,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 17
+COMMIT
+INSERT INTO USUARIO VALUES(17,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 18
+COMMIT
+INSERT INTO USUARIO VALUES(18,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 19
+COMMIT
+/*C27*/DISCONNECT
+/*C29*/DISCONNECT
+/*C30*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+/*C31*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+/*C30*/INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C31*/INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+/*C32*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+INSERT INTO USUARIO VALUES(10,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 11
+COMMIT
+/*C33*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(11,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 12
+COMMIT
+INSERT INTO USUARIO VALUES(12,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 13
+COMMIT
+INSERT INTO USUARIO VALUES(13,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 14
+COMMIT
+/*C32*/INSERT INTO USUARIO VALUES(14,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 15
+COMMIT
+/*C33*/INSERT INTO USUARIO VALUES(15,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 16
+COMMIT
+INSERT INTO USUARIO VALUES(16,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 17
+COMMIT
+INSERT INTO USUARIO VALUES(17,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 18
+COMMIT
+INSERT INTO USUARIO VALUES(18,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 19
+COMMIT
+/*C32*/DISCONNECT
+/*C30*/DISCONNECT
+/*C31*/DISCONNECT
+/*C33*/DISCONNECT
+/*C34*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C35*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C34*/DISCONNECT
+/*C35*/DISCONNECT
+/*C36*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C37*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C36*/DISCONNECT
+/*C37*/DISCONNECT
+/*C38*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+/*C39*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+/*C38*/INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+/*C39*/INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C38*/INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+/*C39*/INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+/*C40*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+/*C41*/SET SCHEMA PUBLIC
+INSERT INTO USUARIO VALUES(8,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+INSERT INTO USUARIO VALUES(10,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 11
+COMMIT
+/*C40*/INSERT INTO USUARIO VALUES(11,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 12
+COMMIT
+INSERT INTO USUARIO VALUES(12,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 13
+COMMIT
+INSERT INTO USUARIO VALUES(13,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 14
+COMMIT
+INSERT INTO USUARIO VALUES(14,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 15
+COMMIT
+/*C38*/DISCONNECT
+/*C40*/DISCONNECT
+/*C41*/INSERT INTO USUARIO VALUES(15,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 16
+COMMIT
+INSERT INTO USUARIO VALUES(16,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 17
+COMMIT
+INSERT INTO USUARIO VALUES(17,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 18
+COMMIT
+INSERT INTO USUARIO VALUES(18,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 19
+COMMIT
+DISCONNECT
+/*C39*/DISCONNECT
+/*C43*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+/*C42*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+/*C43*/INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C42*/INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C43*/INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+/*C42*/INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+/*C43*/INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+/*C42*/INSERT INTO USUARIO VALUES(8,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C43*/INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C42*/INSERT INTO USUARIO VALUES(10,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 11
+COMMIT
+INSERT INTO USUARIO VALUES(11,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 12
+COMMIT
+INSERT INTO USUARIO VALUES(12,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 13
+COMMIT
+/*C43*/INSERT INTO USUARIO VALUES(13,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 15
+COMMIT
+/*C42*/INSERT INTO USUARIO VALUES(14,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 15
+COMMIT
+/*C43*/INSERT INTO USUARIO VALUES(15,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 17
+COMMIT
+/*C42*/INSERT INTO USUARIO VALUES(16,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 17
+COMMIT
+/*C43*/INSERT INTO USUARIO VALUES(17,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 19
+COMMIT
+/*C42*/INSERT INTO USUARIO VALUES(18,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 19
+COMMIT
+/*C43*/INSERT INTO USUARIO VALUES(19,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 21
+COMMIT
+/*C42*/INSERT INTO USUARIO VALUES(20,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 21
+COMMIT
+DISCONNECT
+/*C43*/DISCONNECT
+/*C44*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+/*C45*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+/*C44*/INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C45*/INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+/*C44*/INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+/*C45*/INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+/*C44*/INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+/*C45*/INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+/*C44*/INSERT INTO USUARIO VALUES(8,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(10,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 11
+COMMIT
+/*C45*/INSERT INTO USUARIO VALUES(9,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 11
+COMMIT
+INSERT INTO USUARIO VALUES(11,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 12
+COMMIT
+INSERT INTO USUARIO VALUES(12,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 13
+COMMIT
+INSERT INTO USUARIO VALUES(13,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 15
+COMMIT
+/*C44*/INSERT INTO USUARIO VALUES(14,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 16
+COMMIT
+/*C45*/INSERT INTO USUARIO VALUES(15,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 16
+COMMIT
+/*C44*/INSERT INTO USUARIO VALUES(16,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 18
+COMMIT
+/*C45*/INSERT INTO USUARIO VALUES(17,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 18
+COMMIT
+/*C44*/INSERT INTO USUARIO VALUES(19,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 20
+COMMIT
+/*C45*/INSERT INTO USUARIO VALUES(18,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 21
+COMMIT
+/*C44*/INSERT INTO USUARIO VALUES(20,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 21
+COMMIT
+DISCONNECT
+/*C45*/DISCONNECT
+/*C46*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+INSERT INTO USUARIO VALUES(10,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 11
+COMMIT
+DISCONNECT
+/*C47*/SET SCHEMA PUBLIC
+\u000d\u000a    drop table Usuario if exists
+\u000d\u000a    drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+\u000d\u000a    create table Usuario (\u000d\u000a       id bigint not null,\u000d\u000a        Endereco varchar(255),\u000d\u000a        email varchar(255),\u000d\u000a        senha varchar(255),\u000d\u000a        primary key (id)\u000d\u000a    )
+INSERT INTO USUARIO VALUES(1,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO USUARIO VALUES(2,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+INSERT INTO USUARIO VALUES(3,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+INSERT INTO USUARIO VALUES(4,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO USUARIO VALUES(5,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+INSERT INTO USUARIO VALUES(6,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO USUARIO VALUES(7,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO USUARIO VALUES(8,'Endereco do Usuario','email.do@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+INSERT INTO USUARIO VALUES(9,NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+INSERT INTO USUARIO VALUES(10,'Endereco do Usuario','busca@usuario.com','Senha_Do_Usuario')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 11
 COMMIT
 DISCONNECT
