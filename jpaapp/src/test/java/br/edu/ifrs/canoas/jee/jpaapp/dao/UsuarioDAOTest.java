@@ -19,6 +19,7 @@ public class UsuarioDAOTest {
 		// salva no banco
 		usuarioDAO.salva(usuario);
 		// verifica se salvou
+		assertThat(usuario.getEmail()).isEqualTo("email.do@usuario.com");
 		assertThat(usuario.getId()).isNotNull();
 
 	}
@@ -26,26 +27,26 @@ public class UsuarioDAOTest {
 	@Test
 	public void testaBuscaTodosUsuarios() {
 		// Cria usuario
-		Usuario u1 = new Usuario();
-		Usuario u2 = new Usuario();
+		Usuario u1 = new Usuario("email", "senha", "endereco");
+		Usuario u2 = new Usuario("email", "senha", "endereco");
 		Usuario u3 = new Usuario("email", "senha", "endereco");
+		
 		usuarioDAO.salva(u1);
 		usuarioDAO.salva(u2);
 		usuarioDAO.salva(u3);
 		List<Usuario> usuarios = usuarioDAO.busca();
 		// Deve ter no mínimo 3 usuários no banco
-		assertThat(usuarios).size().isGreaterThan(3);
+		assertThat(usuarios).size().isEqualTo(4);
 	}
 
 	@Test
 	public void testaUsuarioPorEmail() {
-
+		Usuario usuario = new Usuario("EMAIL@DO.USUARIO", "senha", "endereco");
 		// Cria usuario
-		usuarioDAO.salva(new Usuario("email@do.usuario", "senha",
-				"endereco"));
-		Usuario usuarioDoBD = usuarioDAO.buscaPorEmail("EMAIL@DO.USUARIO").get(0);
-		assertThat(usuarioDoBD.getEmail()).isEqualTo("email@do.usuario");
-		assertThat(usuarioDoBD.getId()).isNotNull();
+		usuarioDAO.salva(usuario);
+		
+		assertThat(usuario.getEmail()).isEqualTo("EMAIL@DO.USUARIO");
+		assertThat(usuario.getId()).isNotNull();
 
 	}
 	@Test

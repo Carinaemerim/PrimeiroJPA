@@ -1,5 +1,6 @@
 package br.edu.ifrs.canoas.jee.jpaapp.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -38,7 +39,7 @@ public class UsuarioDAO {
     public void remove(Long id) {
     	em = EntityManagerUtil.getEM();
     	em.getTransaction().begin();
-    	em.remove(id);
+    	em.remove(em.find(Usuario.class, id));
     	em.getTransaction().commit();
     	em.close();
     	
@@ -54,20 +55,27 @@ public class UsuarioDAO {
     }
 
     public List<Usuario> busca() {
+    	List <Usuario> usr = new ArrayList<Usuario>();
+    	
     	em = EntityManagerUtil.getEM();
     	TypedQuery<Usuario> query = em.createQuery("select usr from Usuario usr", Usuario.class);
+   
+    	usr = query.getResultList();
     	em.close();
-    	return query.getResultList();
+    	
+    	return usr;
     }
 
     public List<Usuario> buscaPorEmail(String email) {
+    	List <Usuario> usr = new ArrayList<Usuario>();
     	
         em = EntityManagerUtil.getEM();
-    	
     	TypedQuery<Usuario> query = em.createQuery("select usr from Usuario where usr.email = :email", Usuario.class);
     	query.setParameter("email", email);
+    	usr = query.getResultList();
     	em.close();
-    	return query.getResultList();
+    	
+    	return usr;
     }
     
 }
