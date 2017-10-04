@@ -1,7 +1,5 @@
 package br.edu.ifrs.canoas.jee.jpaapp.dao;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import java.util.List;
 
 import javax.persistence.EntityManager;
